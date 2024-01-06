@@ -7,17 +7,19 @@
 str_split_one(string, pattern, n = Inf)
 }
 \arguments{
-\item{x}{a character vector}
+\item{string}{a character string}
 
-\item{split}{what to split on}
+\item{pattern}{a pattern to split on}
+
+\item{n}{how many to split on}
 }
 \value{
-a character vector
+a character string
 }
 \description{
 Split a string
 }
 \examples{
-x <- "alfa,bravo,charlie,delta"
-str_split_one(x, split = ",")
+ x <- "alfa,bravo,charlie,delta"
+str_split_one(x, pattern = ",")
 }
